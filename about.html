@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - E-Commerce</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1170/1170576.png" type="image/png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .about-hero {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .about-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+    .section-title {
+      margin-bottom: 30px;
+      font-weight: bold;
+      border-bottom: 2px solid #000;
+      display: inline-block;
+    }
+    .team-img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">E-Commerce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link position-relative" href="#" id="cart-toggle">
+              🛒 Cart
+              <span class="badge bg-danger position-absolute top-0 start-100 translate-middle" id="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>About Us</h1>
+      <p class="lead">Driven by passion. Built for customers.</p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title">Our Mission</h2>
+      <p>We aim to deliver high-quality, stylish, and affordable products to customers worldwide. Our e-commerce platform is designed to offer a seamless shopping experience with quick service, secure payments, and real customer care.</p>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us?</h2>
+      <ul>
+        <li>✔️ Wide range of curated products</li>
+        <li>✔️ Fast & secure checkout</li>
+        <li>✔️ Dedicated customer support</li>
+        <li>✔️ Quality guarantee on every product</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Our Team -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title">Meet Our Team</h2>
+      <div class="row g-4">
+        <div class="col-md-4 text-center">
+          <h5>Priya Sharma</h5>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h5>Rohan Patel</h5>
+          <p>CTO - Tech & Innovation</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h5>Anjali Verma</h5>
+          <p>Head of Marketing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 text-center">
+    <p class="mb-0">&copy; 2025 E-Commerce. All rights reserved.</p>
+  </footer>
+
+
+    <!-- Cart Drawer -->
+<div id="cart-drawer" class="position-fixed top-0 end-0 bg-light shadow p-3" style="width: 300px; height: 100vh; z-index: 1050; transform: translateX(100%); transition: transform 0.3s ease;">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h5 class="mb-0">Your Cart</h5>
+    <button class="btn-close" id="cart-close" title="Close Cart"></button>
+  </div>
+  <div id="cart-items" class="mb-3"></div>
+  <h6>Total: $<span id="cart-total">0.00</span></h6>
+  <button class="btn btn-success w-100 mt-3" id="checkout-btn">Checkout</button>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap JS -->
+   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
